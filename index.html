@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hotel feedback form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-content">
+        <form id="feedback" action="./thankyou.html">
+
+           <h1>Hotel Feedback Form</h1>
+           <p>We would like to hear your feedback on your recent stay at our hotel.</p>
+           <hr>
+
+           <div class="form-section">
+              <label for="Name">
+                 Name:
+              </label>
+              <input id="Name" type="text" name="name" required >
+           </div>
+           <div class="form-section">
+              <label for="Email">
+                 Email: 
+              </label>
+              <input id="Email" type="email" name="email"  required>
+           </div>
+           <div class="form-section">
+              <label for="Phone number" required>
+                 Phone Number:
+               </label>
+              <input id="Phone number" type="tel" name="phone">
+           </div>
+
+           <fieldset>
+             <legend>How would you rate your overall satisfaction with our hotel?</legend>
+               <div class="radio-type">
+                   <label for="satisfaction">
+                     <input type="radio" name="satisfaction"  required>
+                      Excellent
+                   </label>
+                   <label for="satisfaction" >
+                     <input type="radio" name="satisfaction" >
+                      Good
+                   </label>
+                   <label for="satisfaction">
+                      <input type="radio" name="satisfaction">
+                      Average
+                   </label>
+                   <label for="satisfaction">
+                      <input type="radio" name="satisfaction">
+                      Poor
+                   </label>
+               </div>
+           </fieldset>
+
+           <fieldset>
+             <legend>Which of the following services did you use?</legend>
+               <div class="checkbox-type">
+                    <label for="sevices">
+                      <input id="services" type="checkbox" name="Room Service">
+                      Room Service
+                   </label>
+                   <label for="services">
+                      <input id="services" type="checkbox" name="Spa">
+                      Spa
+                   </label>
+                   <label for="services">
+                      <input id="services" type="checkbox" name="Swimming Pool">
+                      Swimming Pool
+                   </label>
+                   <label for="services">
+                      <input id="services" type="checkbox" name="Gym">
+                      Gym
+                   </label>
+                   <label for="services">
+                      <input id="services" type="checkbox" name="Resturant">
+                      Resturant
+                   </label>
+            </div>
+           </fieldset>
+
+           <div class="form-section">
+              <label for="comment">
+                Comments and Suggestions
+              </label>
+              <textarea id="comment" rows="5" name="comment"></textarea>
+           </div>
+           <div class="form-section">
+              <label for="newsletter">
+                 <input id="newsletter" type="checkbox" name="newsletter">
+                 Please send me your newsletter for future promotions.
+              </label>
+           </div>
+           <div>
+              <button>Submit Feedback</button>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
